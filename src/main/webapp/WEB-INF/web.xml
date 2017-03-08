@@ -1,0 +1,19 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    
+    <display-name>RestEasy Upload for CDN</display-name>
+    
+    <!-- RestEasy Resource registering -->
+  
+    <context-param>
+    	<param-name>resteasy.resources</param-name>
+    	<param-value>com.{company}.{group}</param-value>
+    	</context-param>
+    <servlet>
+        <servlet-name>comingsoon</servlet-name>
+        <servlet-class>mysite.server.ComingSoonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>comingsoon</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>
